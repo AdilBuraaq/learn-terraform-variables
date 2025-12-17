@@ -119,3 +119,8 @@ module "ec2_instances" {
     environment = "dev"
   }
 }
+module "s3-bucket-AI" {
+  source  = "app.terraform.io/policy-as-code-training/s3-bucket-AI/AWS"
+  version = "1.0.0"
+  # insert required variables here
+}
